@@ -1,7 +1,7 @@
 <template>
   <fragment>
     <input v-model="pokemonName" type="text" />
-    <button v-on:click="getPokemon">Get Pokemon!</button>
+    <button @click="getPokemon">Get Pokemon!</button>
     <div v-if="pokemon">{{ pokemon }}</div>
     <div v-if="errorOcurred">Oops! Something went wront wit your request</div>
   </fragment>
